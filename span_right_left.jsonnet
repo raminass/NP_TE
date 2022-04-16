@@ -42,7 +42,7 @@ local num_labels = std.length(preposition_list);
   "test_data_path": 'data/test_unlabeled.jsonl',
   "evaluate_on_test": false,
   "model": {
-    "type": "tne_coupled_model",
+    "type": "tne_span_right_left",
     "text_field_embedder": {
       "token_embedders": {
         "tokens": {
