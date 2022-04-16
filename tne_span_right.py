@@ -135,9 +135,9 @@ class TNECoupledModel(Model):
             A scalar loss to be optimised.
         """
         index_start = spans[:, :, 0] < spans[:, :, 1] -1
-        index_end = spans[:, :, 0] < spans[:, :, 1] -2
+#         index_end = spans[:, :, 0] < spans[:, :, 1] -2
         spans[:,:, 0][index_start] +=1 
-        spans[:,:, 1][index_end] -=1 
+#         spans[:,:, 1][index_end] -=1 
         
         if self._freeze:
             with torch.no_grad():
