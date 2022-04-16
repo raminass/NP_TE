@@ -42,7 +42,7 @@ local num_labels = std.length(preposition_list);
   "test_data_path": 'data/test_unlabeled.jsonl',
   "evaluate_on_test": false,
   "model": {
-    "type": "tne_coupled_model",
+    "type": "tne_span_right",
     "text_field_embedder": {
       "token_embedders": {
         "tokens": {
@@ -123,7 +123,7 @@ local num_labels = std.length(preposition_list);
             "batch_size_interval": 1,
             "should_log_learning_rate": false,
             "should_log_parameter_statistics": false,
-            "serialization_dir": "runs/coupled_large_10_spans_left_right",
+            "serialization_dir": "runs/coupled_large_10_spans_right",
 
         },
     ],
