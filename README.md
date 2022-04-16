@@ -9,7 +9,7 @@ The models are based on the implementation at: [website](https://yanaiela.github
 * add config file span_right_left.jsonnet to /tne/modeling/configs
 * run: 
 ```bash
-!sudo allennlp train tne/modeling/configs/span_right_left.jsonnet \
+sudo allennlp train tne/modeling/configs/span_right_left.jsonnet \
          --include-package tne \
          -s models/coupled_large_10_spans_right_left
 ```
@@ -19,7 +19,7 @@ The models are based on the implementation at: [website](https://yanaiela.github
 * add config file span_right.jsonnet to /tne/modeling/configs
 * run: 
 ```bash
-!sudo allennlp train tne/modeling/configs/span_right.jsonnet \
+sudo allennlp train tne/modeling/configs/span_right.jsonnet \
          --include-package tne \
          -s models/coupled_large_10_spans_right
 ```
