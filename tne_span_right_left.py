@@ -19,7 +19,7 @@ from tne.modeling.metrics.mcf1_measure import MCF1Measure
 logger = logging.getLogger(__name__)
 
 
-@Model.register("tne_coupled_model")
+@Model.register("tne_span_right_left")
 class TNECoupledModel(Model):
     """
     Details
